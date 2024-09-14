@@ -163,6 +163,9 @@ namespace v2rayN.Views
                 this.Bind(ViewModel, vm => vm.CoreType5, v => v.cmbCoreType5.Text).DisposeWith(disposables);
                 this.Bind(ViewModel, vm => vm.CoreType6, v => v.cmbCoreType6.Text).DisposeWith(disposables);
 
+                this.Bind(ViewModel, vm => vm.userPacDirectDomains, v => v.txtUserPacDirectDomains.Text).DisposeWith(disposables);
+                this.Bind(ViewModel, vm => vm.userPacProxyDomains, v => v.txtUserPacProxyDomains.Text).DisposeWith(disposables);
+
                 this.BindCommand(ViewModel, vm => vm.SaveCmd, v => v.btnSave).DisposeWith(disposables);
             });
             WindowsUtils.SetDarkBorder(this, LazyConfig.Instance.Config.uiItem.followSystemTheme ? !WindowsUtils.IsLightTheme() : LazyConfig.Instance.Config.uiItem.colorModeDark);

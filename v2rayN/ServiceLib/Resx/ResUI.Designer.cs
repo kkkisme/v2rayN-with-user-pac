@@ -3651,5 +3651,20 @@ namespace ServiceLib.Resx {
                 return ResourceManager.GetString("UpdateStandalonePackageTip", resourceCulture);
             }
         }
+        public static string TbSettingsUserPac {
+            get {
+                return ResourceManager.GetString("TbSettingsUserPac", resourceCulture);
+            }
+        }
+        public static string TbSettingsUserPacDirectDomains {
+                    get {
+                        return ResourceManager.GetString("TbSettingsUserPacDirectDomains", resourceCulture);
+                    }
+        }
+        public static string TbSettingsUserPacProxyDomains {
+                    get {
+                        return ResourceManager.GetString("TbSettingsUserPacProxyDomains", resourceCulture);
+                    }
+        }
     }
 }
